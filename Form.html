@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: 'Cursive', sans-serif;
+            background-image: url('run.avif');
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .registration-form {
+            background-color: #739ecc;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        .registration-form h1, .registration-form h2 { 
+            text-align: center;
+            color: #333;
+            font-style: italic;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+<div class="registration-form">
+    <form>
+        <h1>WELLNESS RUN 2.0</h1>
+        <h2>Registration</h2><br>
+
+        First name:<br>
+        <input type="text" name="firstname"><br>
+
+        Last name:<br>
+        <input type="text" name="lastname"><br>
+
+        Phone Number:<br>
+        <input type="tel" name="phonenumber"><br>
+
+        Email:<br>
+        <input type="email" id="email" name="email" placeholder="Email" required><br>
+
+        Gender:<br>
+      
+        <div>
+            <div style="display: flex;justify-content: center;">
+                <input style="width: auto;" type="radio" />
+                <label>Male</label>
+            </div>
+            <div style="display: flex;justify-content: center;">
+                <input style="width: auto;" type="radio" />
+                <label>Female</label>
+            </div>
+        </div>
+     
+
+        Area:<br>
+        <select name="area">
+            <option value="Kurla">Kurla</option>
+            <option value="Andheri">Andheri</option>
+            <option value="Thane">Thane</option>
+        </select>       
+
+        Participation Category:<br>
+        <input list="category" name="category">
+        <datalist id="category">
+            <option value="ITM Students ">
+                <option value="Students from other college ">
+                    <option value="Corporate/Individual"></option>
+        </datalist>
+
+        Payment Mode:<br>
+        <input list="payment mode" name="modes">
+        <datalist id="payment mode">
+            <option value="Online ">
+                <option value="Offline ">
+        </datalist>
+ <button type="submit">Register</button>
+
+        
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: 'Cursive', sans-serif;
+            background-image: url('run.avif');
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .registration-form {
+            background-color: #739ecc;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        .registration-form h1, .registration-form h2 {
+            text-align: center;
+            color: #333;
+            font-style: italic;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="registration-form">
+    <h1>WELLNESS RUN 2.0</h1>
+    <h2>Registration</h2><br>
+
+    First name:<br>
+    <input type="text" name="firstname"><br>
+
+    Last name:<br>
+    <input type="text" name="lastname"><br>
+
+    <label for="number">Phone Number:</label>
+    <input type="tel" name="number"><br>
+
+    Email:<br>
+    <input type="email" id="email" name="email" placeholder="Email" required><br>
+
+    Area:<br>
+    <select name="area">
+        <option value="Kurla">Kurla</option>
+        <option value="Andheri">Andheri</option>
+        <option value="Thane">Thane</option>
+    </select>
+    <br><br>
+
+    Gender:<br>
+    <select name="gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+    </select>
+    <br><br>
+
+    <button type="submit">Register</button>
+</div>
+
+</body>
+</html>
