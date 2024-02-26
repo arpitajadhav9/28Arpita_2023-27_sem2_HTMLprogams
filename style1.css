@@ -1,0 +1,32 @@
+body{
+    direction: rtl;
+}
+
+.container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items:flex-start;
+    align-items: flex-start;
+    width: 500px;
+    height: 250px;
+    background-color: rgb(78, 194, 182);
+    
+}
+
+.item1 {
+    background-color: rgb(57, 24, 98);
+    margin: 10px;
+    text-align: center;
+}
+
+.item2 {
+    background-color: rgb(219, 129, 52);
+    margin: 10px;
+    text-align: center;
+}
+
+.item3 {
+    background-color: rgb(176, 52, 139);
+    margin: 10px;
+    text-align: center;
+}
